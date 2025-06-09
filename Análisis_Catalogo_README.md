@@ -34,9 +34,17 @@ pasando por su organización en un modelo de datos relacional para desagregar la
 Tras el análisis, se han identificado varios puntos destacados:
 
 * **Presencia de erróres en la base de datos:** Se encontro erróres de carga y columnas con datos mezclados que respondian a otra columna. Las columnas de country, listed_in, director	y cast se encontraban en cadena de texto separadas por coma.
-* Se realizaron bases relacionales con el objetivo de desagreagr dichas columnas teniendo para un show_id todos los valores referidos a cada una de esas columnas. Se encontro erróres tipográficos en la columna de duration puesto que habia valores en plural y singular para 'Season', como asi también se mencionaba valores del tipo tiempo, por lo que se desagrego dicha columna en dos duration_int y	duration_type de manera de poder realizar una correcta contabilización por duración de tiempo o cantidad de temporadas.
+* Se realizaron bases relacionales con el objetivo de desagregar dichas columnas teniendo para un show_id todos los valores referidos a cada una de las columnas mencionadas anteriormentre. Se encontro erróres tipográficos en la columna de duration puesto que habia valores en plural y singular para 'Season', como asi también se mencionaba valores del tipo tiempo, por lo que se desagrego dicha columna en dos duration_int y	duration_type de manera de poder realizar una correcta contabilización por duración de tiempo o cantidad de temporadas.
 
-* **Duración de Películas:** La duración promedio de las películas en Netflix se sitúa alrededor de 90 minutos. Se observa una concentración significativa de películas en el rango de [90 a 100] minutos, con algunas películas outliers excepcionalmente largas o cortas. Como por ejemplo la película más larga fue Black Mirror: Bandersnatch (312 min)
+* **Duración de Películas:** La duración promedio de las películas en Netflix se sitúa alrededor de 90 minutos. Se observa una concentración significativa de películas en el rango de [90 a 100] minutos, con algunas películas outliers excepcionalmente largas o cortas. Como por ejemplo la película más larga fue Black Mirror: Bandersnatch (312 min). Es importante destacar que la producción de contenido se centraliza en los siguientes 5 paises:
+
+-United States
+-India
+-United Kingdom
+-Canada
+-France
+
+Estos países produjeron [6381] peliculas y series, lo cúal representa un [72.43%] del catalogo total de Netflix.
 
 * **Distribución de Temporadas en Series:** La gran mayoría de las series en Netflix se desarrollan en [1 o 2] temporadas. Hay algunos casos atipicos representados en la cola larga del Boxplot creado en Python, el cual refiere  a serires con un mayor número de temporadas, pero son menos frecuentes. Como por ejemplo la serie Grace Anatomy con 17 temporadas.
   
