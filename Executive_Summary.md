@@ -34,13 +34,13 @@ Tras el análisis, se han identificado varios puntos destacados:
 * **Presencia de erróres en la base de datos:** Se encontro erróres de carga y columnas con datos mezclados que respondian a otra columna. Las columnas de country, listed_in, director	y cast se encontraban en cadena de texto separadas por coma.
 * Se realizaron bases relacionales con el objetivo de desagreagr dichas columnas teniendo para un show_id todos los valores referidos a cada una de esas columnas. Se encontro erróres tipográficos en la columna de duration puesto que habia valores en plural
 * y singular para 'Season', como asi también se mencionaba valores del tipo tiempo, por lo que se desagrego dicha columna en dos duration_int y	duration_type de manera de poder realizar una correcta contabilización por duración de tiempo o cantidad de temporadas.
-*
+
 * **Duración de Películas:** La duración promedio de las películas en Netflix se sitúa alrededor de 90 minutos. Se observa una concentración significativa de películas en el rango de [90 a 100] minutos, con algunas películas outliers excepcionalmente largas o cortas.
 * Como por ejemplo la película más larga fue Black Mirror: Bandersnatch (312 min)
-*
+
 * **Distribución de Temporadas en Series:** La gran mayoría de las series en Netflix se desarrollan en [1 o 2] temporadas. Hay algunos casos atipicos representados en la cola larga del Boxplot creado en Python, el cual refiere  a serires con un mayor número de temporadas, pero son menos frecuentes.
 * Como por ejemplo la serie Grace Anatomy con 17 temporadas.
-* 
+  
 * **Tendencias de Lanzamiento:**
 * Se realizo un gráfico destinado a analizar la tendencia temporal para peliculas en el mismo se puede apreciar una gran variabilidad en la duración promedio de las películas sobre todo en el tramo que abarca la decada 40-70.
 * En el periodo de la decada 70-90 se observa una varabilidad mas acotada que va de una duracion de las peliculas de 150 a 100 minutos promedio. Luego se visualiza una cierta estabilidad y una ligera tendencia bajista en la decada de los 90-20 alrededor de los 110-120 minutos promedio.
