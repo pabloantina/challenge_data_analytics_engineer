@@ -18,7 +18,9 @@ Nuestro repositorio de GitHub se estructura para ofrecer una visión completa de
  3) Codigo para la consigna [Evolución de títulos por año.](Exercise_3_titles_per_year.sql), [resultados](Results_exercise_3_titles_per_year.csv).
  4) Codigo para la consigna [Distribución de tipos por país](Exercise_4_type_per_country.sql), [resultados](Results_exercise_4_type_per_country.csv).
 * **`netflix_analysis.ipynb` (Código de Python):** Un script de Python desarrollado en Google Colab dedicado al filtrado, procesamiento y generación de gráficos con el fin de clarificar los datos y obtener insights referidos a evolución del contenido a lo largo del tiempo y Outliers.
+
 [Análisis_del contenido de Netflix_con_Python](Análisis_de_NTFX_con_Python.ipynb)
+
 [Enlace al Notebook de Análisis en Google Colab](https://colab.research.google.com/drive/1GZ_hteDzXQfPQ6bIjg5XAKuivhGxQvjV?usp=sharing)
 
 ## Metodología General
