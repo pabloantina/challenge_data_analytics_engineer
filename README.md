@@ -1,1 +1,0 @@
-# challenge_data_analytics_engineer
