@@ -11,8 +11,13 @@ y de la cantidad de temporadas que tienen las series-tv shows, también evaluamo
 
 Nuestro repositorio de GitHub se estructura para ofrecer una visión completa del proceso de análisis de datos:
 
-* **`sql/` (Scripts SQL):** Contiene los scripts SQL utilizados para la creación y el procesamiento de la base de datos en PostgreSQL, mediante tablas relacionales y un script destinado a ser utilizado como fuente posterior del dashboard realizado en Looker Studio.
-* Como asi también se podra visualizar el modelo estrella creado [modelo de datos en estrella](modelo_estrella_estandarizado.sql), el cúal tiene como fin ser utilizado para consultas analíticas. A su vez, se podrá visualizar pequeños códigos creados para responder a ejercicios solicitados y consultas específicas.
+* **`sql/` (Scripts SQL):** Contiene los scripts SQL utilizados para la creación y el procesamiento de la [base de datos en PostgreSQL](codigo_estandarizado.sql), mediante tablas relacionales y un script destinado a ser utilizado como fuente posterior del dashboard realizado en Looker Studio. A su vez, se creo un [diccionario de datos](diccionario_de_datos.csv) para visualizar la compisición de las columnas.
+* Como asi también se podra visualizar el [modelo estrella creado](modelo_estrella_estandarizado.sql), el cúal tiene como fin ser utilizado para consultas analíticas. A su vez, se podrá visualizar pequeños códigos creados para responder a ejercicios solicitados y consultas específicas.
+* Por otro lado, se realizaron pequeñas consultas con el objetivo de responder a los siguientes ejercicios y sus correspondientes resutlados:
+ 1) Codigo para la consigna [Top 10 países con más títulos.](Exercise_top_10_countries.sql), [resultados].(Results_exercise_top_10_countries.csv)
+ 2) Codigo para la consigna [Géneros más populares.](Exercise_2_popular_categories.sql), [resultados].(Results_exercise_2_popular_categories.csv)
+ 3) Codigo para la consigna [Evolución de títulos por año.](Results_exercise_3_titles_per_year.csv)
+ 4) Codigo para la consigna [Distribución de tipos por país](Results_exercise_4_type_per_country.csv)
 * **`netflix_analysis.ipynb` (Código de Python):** Un script de Python desarrollado en Google Colab dedicado al filtrado, procesamiento y generación de gráficos con el fin de clarificar los datos y obtener insights referidos a evolución del contenido a lo largo del tiempo y Outliers.
 [Abrir Notebook de Análisis en Google Colab](https://colab.research.google.com/drive/1GZ_hteDzXQfPQ6bIjg5XAKuivhGxQvjV?usp=sharing)
 
