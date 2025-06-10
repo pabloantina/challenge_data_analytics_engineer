@@ -60,7 +60,7 @@ Conclusión: La duración promedio de las películas ha experimentado fluctuacio
 
 * También se realizo un analisis de la tendencia temporal para series pudiendo observar que hay una gran variabilidad entre la decada del 60-80, ya que hay presencia de picos que aluden a series con cantidad de temporadas superior a 4. A partir de mediados de la decada de los 90 se puede visualizar una tendencia general a la baja en la cantidad de temporadas. Especialmente después de 2010, la línea muestra una tendencia a establecerse en un promedio muy bajo, casi siempre por debajo de las 2 temporadas, con algunas pequeñas fluctuaciones. Esto último es coherente con el auge de las miniseries o las series de unica temporada en los ultimos años.
 
-* **Contenido por Tipo:** Del total de datos pudimos concluir que hay 6132 peliculas que representan [69.6]% del catálogo y hay 2677 series que representan [30.38]% del catalogo, lo que indica una relación de [3/1] de peliculas por sobre las series.
+* **Contenido por Tipo:** Del total de datos pudimos concluir que hay 6132 peliculas que representan 69.6% del catálogo y hay 2677 series que representan 30.38% del catalogo, lo que indica una relación de [3/1] de peliculas por sobre las series.
 
 
 ## Dashboard Interactivo (Looker Studio)
