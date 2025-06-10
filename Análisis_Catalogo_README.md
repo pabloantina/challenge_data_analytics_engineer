@@ -48,7 +48,7 @@ Tras el análisis, se han identificado varios puntos destacados:
 
 -France
 
-Estos países produjeron [6381] peliculas y series, lo cúal representa un [72.43%] del catalogo total de Netflix.
+Estos países produjeron 6381 peliculas y series, lo cúal representa un 72.43% del catalogo total de Netflix.
 
 * **Distribución de Temporadas en Series:** La gran mayoría de las series en Netflix se desarrollan en [1 o 2] temporadas. Hay algunos casos atipicos representados en la cola larga del Boxplot creado en Python, el cual refiere  a serires con un mayor número de temporadas, pero son menos frecuentes. Como por ejemplo la serie Grace Anatomy con 17 temporadas.
   
