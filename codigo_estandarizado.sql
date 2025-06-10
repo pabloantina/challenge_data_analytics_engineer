@@ -27,7 +27,7 @@ CREATE TABLE directores (
 INSERT INTO directores (show_id, director)
 SELECT show_id, UNNEST(string_to_array(director, ', '))
 FROM table_netflix_titles
-WHERE director IS NOT NULL AND director <> '';
+WHERE director IS NOT NULL;
 
 ALTER TABLE table_netflix_titles RENAME COLUMN "cast" TO actores_1;
 
@@ -44,7 +44,7 @@ CREATE TABLE actores (
 INSERT INTO actores (show_id, actor)
 SELECT show_id, UNNEST(string_to_array(actores_1, ', '))
 FROM table_netflix_titles
-WHERE actores_1 IS NOT NULL AND actores_1 <> '';
+WHERE actores_1 IS NOT NULL;
 
 /*Procedo a eliminar valores duplicados dentro de una misma fila para la columna referida a actores*/
 
