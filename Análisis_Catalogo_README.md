@@ -39,9 +39,13 @@ Tras el análisis, se han identificado varios puntos destacados:
 * **Duración de Películas:** La duración promedio de las películas en Netflix se sitúa alrededor de 90 minutos. Se observa una concentración significativa de películas en el rango de [90 a 100] minutos, con algunas películas outliers excepcionalmente largas o cortas. Como por ejemplo la película más larga fue Black Mirror: Bandersnatch (312 min). Es importante destacar que la producción de contenido se centraliza en los siguientes 5 paises:
 
 -United States
+
 -India
+
 -United Kingdom
+
 -Canada
+
 -France
 
 Estos países produjeron [6381] peliculas y series, lo cúal representa un [72.43%] del catalogo total de Netflix.
