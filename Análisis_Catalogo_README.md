@@ -10,14 +10,14 @@ Este proyecto tiene como objetivo principal realizar un análisis del catálogo 
 
 Este repositorio de GitHub se estructura para ofrecer una visión completa del proceso de análisis de datos:
 
-* **`sql/` (Scripts SQL):** Contiene los scripts de SQL utilizados para la creación y el procesamiento de la [base de datos en PostgreSQL](codigo_estandarizado.sql), mediante tablas relacionales y un script destinado a ser utilizado como fuente posterior del dashboard realizado en Looker Studio. A su vez, se creo un [diccionario de datos](diccionario_de_datos.csv) para visualizar la compisición de las columnas.
+* **Scripts SQL:** Contiene los scripts de SQL utilizados para la creación y el procesamiento de la [base de datos en PostgreSQL](codigo_estandarizado.sql), mediante tablas relacionales y un script destinado a ser utilizado como fuente posterior del dashboard realizado en Looker Studio. A su vez, se creo un [diccionario de datos](diccionario_de_datos.csv) para visualizar la compisición de las columnas.
 * Como asi también se podrá visualizar el [modelo estrella creado](modelo_estrella_estandarizado.sql), el cúal tiene como fin ser utilizado para consultas analíticas.
 * Por otro lado, se realizaron pequeñas consultas con el objetivo de responder a los siguientes ejercicios y sus correspondientes resultados:
  1) Codigo para la consigna [Top 10 países con más títulos.](Exercise_top_10_countries.sql), [resultados](Results_exercise_top_10_countries.csv).
  2) Codigo para la consigna [Géneros más populares.](Exercise_2_popular_categories.sql), [resultados](Results_exercise_2_popular_categories.csv).
  3) Codigo para la consigna [Evolución de títulos por año.](Exercise_3_titles_per_year.sql), [resultados](Results_exercise_3_titles_per_year.csv).
  4) Codigo para la consigna [Distribución de tipos por país](Exercise_4_type_per_country.sql), [resultados](Results_exercise_4_type_per_country.csv).
-* **`netflix_analysis.ipynb` (Código de Python):** Un script de Python desarrollado en Google Colab dedicado al filtrado, procesamiento y generación de gráficos con el fin de clarificar los datos y obtener insights referidos a evolución del contenido a lo largo del tiempo y Outliers.
+* **Código de Python:** Un script de Python desarrollado en Google Colab dedicado al filtrado, procesamiento y generación de gráficos con el fin de clarificar los datos y obtener insights referidos a evolución del contenido a lo largo del tiempo y Outliers.
 
 [Análisis_del contenido de Netflix_con_Python](Análisis_de_NTFX_con_Python.ipynb)
 
