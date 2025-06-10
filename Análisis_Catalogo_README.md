@@ -63,7 +63,9 @@ Conclusión: La duración promedio de las películas ha experimentado fluctuacio
 Para una exploración visual interactiva de estos insights y otros detalles del catálogo de Netflix como por ejemplo concentración de titulos por pais, categorias y evolución del contenido a lo largo del tiempo, se comparte el siguiente dashboard realizado en Looker Studio:
 
 [Enlace de acceso al Dashboard de Análisis en Looker Studio](https://lookerstudio.google.com/reporting/0d580124-7616-462e-8409-c1bec239f7c7)
+
 [Codigo utilizado para el procesamiento de la base empleada en Looker Studio](script_with_union_looker.sql)
+
 [Google Spreadsheet de acceso a la base de datos procesada](https://docs.google.com/spreadsheets/d/1qAK0wzn3jGQAQHrqrE-GtwGWmcjQ6ADZi3jqIKL1MnE/edit?usp=sharing)
 
 ## Conclusión
