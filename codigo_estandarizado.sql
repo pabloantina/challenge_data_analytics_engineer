@@ -85,7 +85,7 @@ CREATE TABLE categorias (
 INSERT INTO categorias (show_id, categoria)
 SELECT show_id, UNNEST(string_to_array(listed_in, ', '))
 FROM table_netflix_titles
-WHERE listed_in IS NOT NULL AND listed_in <> '';
+WHERE listed_in IS NOT NULL;
 
 
 /*Creo otra tabla relacional para la columna country, dado que hay varios resultados posibles por pelicula*/
@@ -99,4 +99,4 @@ CREATE TABLE paises (
 INSERT INTO paises (show_id, pais)
 SELECT show_id, UNNEST(string_to_array(country, ', '))
 FROM table_netflix_titles
-WHERE country IS NOT NULL AND country <> '';
+WHERE country IS NOT NULL;
