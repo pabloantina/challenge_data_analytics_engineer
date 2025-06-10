@@ -55,12 +55,19 @@ SELECT DISTINCT type FROM table_netflix_titles;
 a partir de tablas relacionales, de manera tal de poder desglozar las cadenas de texto por cada show_id y poder
 realizar una correcta contabilziación para cada una de estas dimensiones */
 
+/*Tabla de categorias*/
 CREATE TABLE categorias (
     id SERIAL PRIMARY KEY,
     show_id TEXT REFERENCES table_netflix_titles(show_id),
-    categoria TEXT
-);
+    categoria TEXT,
+    CONSTRAINT unique_categoria_per_show UNIQUE (show_id, categoria));
 
+INSERT INTO categorias (show_id, categoria)
+SELECT show_id, UNNEST(string_to_array(listed_in, ', '))
+FROM table_netflix_titles
+WHERE listed_in IS NOT NULL;
+
+/*Tabla de actores*/
 CREATE TABLE actores (
     id SERIAL PRIMARY KEY,
     show_id TEXT REFERENCES table_netflix_titles(show_id),
@@ -72,6 +79,7 @@ SELECT show_id, UNNEST(string_to_array(actores_1, ', '))
 FROM table_netflix_titles
 WHERE actores_1 IS NOT NULL;
 
+/*Tabla de paises*/
 CREATE TABLE paises (
     id SERIAL PRIMARY KEY,
     show_id TEXT REFERENCES table_netflix_titles(show_id),
