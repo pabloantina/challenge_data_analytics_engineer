@@ -70,5 +70,10 @@ CREATE TABLE actores (
 CREATE TABLE paises (
     id SERIAL PRIMARY KEY,
     show_id TEXT REFERENCES table_netflix_titles(show_id),
-    pais TEXT
-);
+    pais TEXT,
+    CONSTRAINT unique_pais_per_show UNIQUE (show_id, pais));
+
+INSERT INTO paises (show_id, pais)
+SELECT show_id, UNNEST(string_to_array(country, ', '))
+FROM table_netflix_titles
+WHERE country IS NOT NULL;
