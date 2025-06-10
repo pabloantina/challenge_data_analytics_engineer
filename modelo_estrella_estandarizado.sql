@@ -64,8 +64,13 @@ CREATE TABLE categorias (
 CREATE TABLE actores (
     id SERIAL PRIMARY KEY,
     show_id TEXT REFERENCES table_netflix_titles(show_id),
-    actor TEXT
-);
+    actor TEXT,
+    CONSTRAINT unique_actor_per_show UNIQUE (show_id, actor));
+
+INSERT INTO actores (show_id, actor)
+SELECT show_id, UNNEST(string_to_array(actores_1, ', '))
+FROM table_netflix_titles
+WHERE actores_1 IS NOT NULL;
 
 CREATE TABLE paises (
     id SERIAL PRIMARY KEY,
