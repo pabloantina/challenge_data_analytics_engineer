@@ -8,7 +8,7 @@ Este proyecto tiene como objetivo principal realizar un análisis del catálogo 
 
 ## Componentes Clave del Repositorio
 
-Nuestro repositorio de GitHub se estructura para ofrecer una visión completa del proceso de análisis de datos:
+Este repositorio de GitHub se estructura para ofrecer una visión completa del proceso de análisis de datos:
 
 * **`sql/` (Scripts SQL):** Contiene los scripts de SQL utilizados para la creación y el procesamiento de la [base de datos en PostgreSQL](codigo_estandarizado.sql), mediante tablas relacionales y un script destinado a ser utilizado como fuente posterior del dashboard realizado en Looker Studio. A su vez, se creo un [diccionario de datos](diccionario_de_datos.csv) para visualizar la compisición de las columnas.
 * Como asi también se podrá visualizar el [modelo estrella creado](modelo_estrella_estandarizado.sql), el cúal tiene como fin ser utilizado para consultas analíticas.
