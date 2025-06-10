@@ -78,5 +78,6 @@ Para una exploración visual interactiva de estos insights y otros detalles del 
 Este proyecto proporciona una visión integral de la composición del catalogo y de las tendencias del contenido de Netflix, incoporando nuevas variables táles como cantidad de visualizaciones por titulos y costo de producción e ingresos alcanzados se podria profundizar acerca de proyecciones y toma de decisiones estratégicas sobre inversiones del futuro catalogo de Netflix.
 
 ---
-**Autor:** [Pablo Leonel Antinarelli]
-**Fecha de entrega:** [10 de junio de 2025]
+**Autor:** Pablo Leonel Antinarelli
+
+**Fecha de entrega:** 10 de junio de 2025
