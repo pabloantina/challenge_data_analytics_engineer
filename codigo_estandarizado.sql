@@ -11,7 +11,7 @@ ALTER TABLE table_netflix_titles ADD COLUMN duration_int INT;
 ALTER TABLE table_netflix_titles ADD COLUMN duration_type TEXT;
 
 UPDATE table_netflix_titles 
-SET duration_int = NULLIF(regexp_replace(duration, '[^0-9]', '', 'g'), '')::INT,
+SET duration_int = regexp_replace(duration, '[^0-9]', '', 'g')::INT,
     duration_type = regexp_replace(duration, '[0-9]', '', 'g');
 
 
