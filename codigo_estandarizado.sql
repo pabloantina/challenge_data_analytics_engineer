@@ -50,9 +50,7 @@ WHERE actores_1 IS NOT NULL;
 
 UPDATE table_netflix_titles
 SET actores_1 = array_to_string(
-    ARRAY(
-        SELECT DISTINCT UNNEST(string_to_array(actores_1, ', '))
-    ), ', ');
+    ARRAY(SELECT DISTINCT UNNEST(string_to_array(actores_1, ', '))), ', ');
 
 
 /*Actualizo el valor de la columna duration, dado que hay 3 resultados 
